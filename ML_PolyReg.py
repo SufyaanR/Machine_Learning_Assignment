@@ -61,7 +61,7 @@ print(f"Train R²: {r2_train:.4f}")
 
 # Create smooth curve for plotting
 x_plot = np.linspace(min(x), max(x), 100).reshape(-1, 1)
-x_plot_scaled = scaler.transform(x_plot)  # scale the plot data too!
+x_plot_scaled = scaler.transform(x_plot)  # scale the plot data
 x_plot_poly = poly.transform(x_plot_scaled)
 y_plot = model.predict(x_plot_poly)
 
